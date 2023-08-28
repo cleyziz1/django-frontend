@@ -10,3 +10,6 @@ def setor(request):
 def logout(request):
     return render(request, 'logout.html')
 
+def buscar(request):
+    return render(request, 'buscar.html')
+
