@@ -86,10 +86,10 @@
         }
 
         .comp-set a button{
-            width: 60px;
+            width: 80px;
             border: none;
             border-radius: 8px;
-            height: 25px;
+            height: 35px;
             color: white;
             background-color: #056805;
             cursor: pointer;
@@ -132,8 +132,13 @@
             <input type="checkbox">
             <label>Folha:</label>
             <input type="checkbox"><br><br>
-            <a href="{% url 'home' %}"><button>Enviar</button></a>
+            <a href="{% url 'home' %}"><button onclick="confirmation()">Salvar Item</button></a>
         </div>
     </div>
+
+    <script>
+        function confirmation(){
+            alert('Item Salvo!')
+        }
+    </script>
 </body>
-</html>
