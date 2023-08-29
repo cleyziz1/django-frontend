@@ -132,8 +132,13 @@
             <input type="checkbox">
             <label>Folha:</label>
             <input type="checkbox"><br><br>
-            <a href="{% url 'home' %}"><button>Confirmar Envio</button></a>
+            <a href="{% url 'home' %}"><button>Enviar</button></a>
         </div>
     </div>
+
+    <script>
+        function confirmation(){
+            alert('Item Salvo!')
+        }
+    </script>
 </body>
-</html>
