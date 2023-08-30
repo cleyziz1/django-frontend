@@ -1,19 +1,21 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/home.css' %}">
     <title>Nada consta</title>
     <style>
+        
         *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .absolute-div {
+            }
+        
+            .absolute-div {
             background-color: rgba(211, 210, 210, 0.932);
             border-radius: 12px;
             padding: 22px;
@@ -21,82 +23,80 @@
             margin-left: 20px;
             margin-top: 2px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        .absolute-div input{
-            outline: none;
-            border-radius: 8px;
-            border: none;
-            height: 20px;
-            
-        }
-
-        .absolute-div a button {
-            background-color: #056805;
-            color: white;
-            height: 20px;
-            width: 60px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .container {
-            border: 1px solid;
-            width: 99%;
-            margin-left: 8px;
-            height: 430px;
-            margin-top: 90px;
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        .serv-info {
-            border-radius: 12px;
-            padding: 20px;
-            border: 1px solid;
-            width: 100%;
-            height: 70px;
-            display: flex;
-            align-items: center;
-        }
-        .serv-info input {
-            outline: none;
-            margin-right: 15px;
-            margin-left: 9px;
-        }
-
-        .comp-set {
-            border: 1px solid;
-            width: 30%;
-            height: 70%;
-            border-radius: 12px;
-            display: inline-block; 
-        }
-
-        .comp-set a{
-            color: black;
-            margin-left: 16px;
-            margin-right: 90px;
-        }
-
-        .comp-set label{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-left: 8px;
-        }
-
-        .comp-set a button{
-            width: 80px;
-            border: none;
-            border-radius: 8px;
-            height: 35px;
-            color: white;
-            background-color: #056805;
-            cursor: pointer;
-        }
-
+            }
+        
+            .absolute-div input{
+                outline: none;
+                border-radius: 8px;
+                border: none;
+                height: 20px;
+                
+            }
+        
+            .absolute-div a button {
+                background-color: #056805;
+                color: white;
+                height: 20px;
+                width: 60px;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+            }
+        
+            .container {
+                border: 1px solid;
+                width: 99%;
+                margin-left: 8px;
+                height: 430px;
+                margin-top: 90px;
+                padding: 20px;
+                border-radius: 12px;
+            }
+        
+            .serv-info {
+                border-radius: 12px;
+                padding: 20px;
+                border: 1px solid;
+                width: 100%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+            }
+            .serv-info input {
+                outline: none;
+                margin-right: 15px;
+                margin-left: 9px;
+            }
+        
+            .comp-set {
+                border: 1px solid;
+                width: 30%;
+                height: 70%;
+                border-radius: 12px;
+                display: inline-block; 
+            }
+        
+            .comp-set a{
+                color: black;
+                margin-left: 16px;
+                margin-right: 90px;
+            }
+        
+            .comp-set label{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-left: 8px;
+            }
+        
+            .comp-set a button{
+                width: 80px;
+                border: none;
+                border-radius: 8px;
+                height: 35px;
+                color: white;
+                background-color: #056805;
+                cursor: pointer;
+            }
     </style>
-
 </head>
 <body>
     {% include 'navbar.html' %}
@@ -135,6 +135,7 @@
             <a href="{% url 'home' %}"><button onclick="confirmation()">Confirmar Item!</button></a>
         </div>
     </div>
+    
 
     <script>
         function confirmation(){
